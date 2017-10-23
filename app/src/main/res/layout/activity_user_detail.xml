@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.zhianjia.m.zhianjia.UI.main.UserDetailActivity">
+
+    <com.zhianjia.m.zhianjia.UI.widget.NavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <com.zhianjia.m.zhianjia.UI.widget.ToolBarSpaceView
+        android:id="@+id/bottomSpaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <RelativeLayout
+        android:id="@+id/avatar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/navigationBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <com.zhianjia.m.zhianjia.UI.widget.RoundImageView
+                android:id="@+id/avatar_image_view"
+                android:layout_width="94dp"
+                android:layout_height="94dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/avatar_image_view"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_overlay" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_layout"
+        android:layout_below="@+id/avatar_layout"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="25dp">
+
+
+        <ListView
+            android:id="@+id/detail_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent" />
+
+        <TextView
+            android:id="@+id/none_record_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="暂无记录"
+            android:textColor="@color/userDetailNoneRecordColor" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/bottomSpaceView"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp">
+
+        <Button
+            android:id="@+id/call_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorPrimary"
+            android:text="视频通话"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/delete_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_below="@+id/call_button"
+            android:background="@drawable/primary_color_stoke_background"
+            android:text="删除好友"
+            android:textColor="@color/colorPrimary" />
+    </RelativeLayout>
+</RelativeLayout>

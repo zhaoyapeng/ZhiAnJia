@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        zhianjia {
+            keyAlias 'zhianjia'
+            keyPassword 'zhianjia123'
+            storeFile file('/Users/mrj/zhaoyp/ZhiAnJia/zhianjia.jks')
+            storePassword 'zhianjia123'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.zhianjia.m.zhianjia"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 19
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.zhianjia
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue "string", "req_url", "https://uhome.haier.net:6503"
+            resValue "string", "azj_req_url", "http://api.bjzhianjia.com"
+            resValue "string", "appver", "1.10"
+            resValue "string", "azj_sign_key", "sWD3wd#d5"
+            resValue "string", "uws_req_url", "https://uws.haier.net"
+            signingConfig signingConfigs.zhianjia
+        }
+        debug {
+//            resValue "string", "req_url", "https://developer.haier.net:6503"
+            resValue "string", "req_url", "https://uhome.haier.net:6503"
+            resValue "string", "azj_req_url", "http://zhianjiaapi.mohetoys.com"
+            resValue "string", "appver", "1.10"
+            resValue "string", "azj_sign_key", "sWD3wd#d5"
+            resValue "string", "uws_req_url", "https://uws.haier.net"
+            signingConfig signingConfigs.zhianjia
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    productFlavors {
+    }
+}
+repositories {
+    flatDir{
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'httpcomponents-httpcore:httpcore:4.0-alpha6'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    testCompile 'junit:junit:4.12'
+    compile(name: 'uSDK4.1.02_Phone_Android', ext: 'aar')
+    compile files('libs/android-async-http-1.4.5.jar')
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+}

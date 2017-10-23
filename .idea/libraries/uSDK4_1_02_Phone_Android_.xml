@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="uSDK4.1.02_Phone_Android-">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/fd26a87f65312859a6266bc52ae7904e5d92a6be/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/fd26a87f65312859a6266bc52ae7904e5d92a6be/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/addUserBackground">
+
+    <com.zhianjia.m.zhianjia.UI.widget.NavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/navigationBar"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="35dp">
+
+        <RelativeLayout
+            android:id="@+id/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/input_title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="好友手机号"
+                android:textColor="@color/addUserTitleColor"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/user_phone_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_title_text_view"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/transparent"
+                android:singleLine="true"
+                android:textColor="@color/addUserInputColor"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/user_phone_edit_text"
+                android:background="@color/dividerLineColor" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/commit_button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_above="@+id/keyboard_space_view"
+            android:background="@color/colorPrimary"
+            android:text="发送请求"
+            android:textColor="@color/addUserButtonTextColor"
+            android:textSize="15sp" />
+
+        <com.zhianjia.m.zhianjia.UI.widget.KeyboardSpaceView
+            android:id="@+id/keyboard_space_view"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="U+ Dev Kit Board"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:text="@string/title_udevkitboard_properties"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="@android:color/black"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/textView2"
+        android:background="#FF909090" />
+    
+    <TableLayout
+        android:id="@+id/layout_properties"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tip_udevkitboard_on"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/code_udevkitboard_onoff_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:textColor="@android:color/black"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="80dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tip_udevkitboard_temp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:textColor="@android:color/black"/>
+
+            <TextView
+               	android:id="@+id/code_udevkitboard_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:textColor="@android:color/black"/>
+        </TableRow>
+        
+    </TableLayout>
+
+    
+    <TextView
+        android:id="@+id/title_properties"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_properties"
+        android:text="@string/title_udevkitboard_control"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <View
+        android:id="@+id/line_properties"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/title_properties"
+        android:background="#FF909090" />
+    
+    <TableLayout
+        android:id="@+id/layout_elecheater_control"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_properties">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="80dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/tip_udevkitboard_on"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:textColor="@android:color/black"/>
+
+            <Switch
+                android:id="@+id/udevkitboard_onoff_switch"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"/>
+
+        </TableRow>
+        
+    </TableLayout>
+    
+</RelativeLayout>

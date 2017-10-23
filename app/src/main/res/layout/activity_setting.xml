@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settingPageBackgroundColor"
+    android:orientation="vertical">
+
+    <com.zhianjia.m.zhianjia.UI.widget.NavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:id="@+id/centerView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerVertical="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/centerView"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/versionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainLogo"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/settingVersionColor"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/mainLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/main_icon"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/settingList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/aboutTextView"
+        android:layout_below="@+id/centerView"
+        android:layout_marginTop="-20dp"
+        android:background="@color/settingPageBackgroundColor"
+        android:divider="@color/transparent"></ListView>
+
+    <com.zhianjia.m.zhianjia.UI.widget.ToolBarSpaceView
+        android:id="@+id/bottomSpaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:id="@+id/aboutTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomSpaceView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Copyright © 2016 深圳羚羊极速科技有限公司"
+        android:textColor="@color/loginTitleLightColor"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>

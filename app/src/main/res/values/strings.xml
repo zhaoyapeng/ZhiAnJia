@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">智安家</string>
+
+
+    <string name="app_network_error">网络已断开，请检查你的网络</string>
+    <string name="waiting">请稍候...</string>
+    <string name="req_exception">请求异常</string>
+    <string name="check_camera_permission">无法开启相机</string>
+    <string name="invite_video_call"> 正在邀请您进行视频通话</string>
+
+    <string name="title_activity_calling">CallingActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_setting">SettingActivity</string>
+
+
+    <!--海尔相关-->
+
+    <string name="tip_devices_searched">智能设备列表（已被uSDK发现）</string>
+
+    <string name="tip_uSDK_status_notstarted">uSDK未启动</string>
+    <string name="tip_uSDK_status_start">uSDK正常启动</string>
+    <string name="tip_uSDK_status_startsearch">正在搜索设备</string>
+
+    <string name="other_device_typeunknown">未知设备类型</string>
+
+    <string name="devicestatus_unconnected">未连接</string>
+    <string name="devicestatus_connecting">连接中</string>
+    <string name="devicestatus_connected">已连接</string>
+    <string name="devicestatus_offline">下线</string>
+    <string name="devicestatus_ready">就绪</string>
+
+    <string name="tip_device_connect_status"> 连接状态:</string>
+
+    <string name="tip_deviceproperty">智能设备属性列表：</string>
+
+    <string name="tip_help_content">步骤1：设置智能设备进入配置模式（SoftAP）。\n步骤2：稍等片刻，将手机连接到 WIFI:U-XXXX（XXXX是智能家电MAC最后4位），并扫描手机WIFI列表。\n步骤3：为智能家电选择一个WIFI并输入密码。\n步骤4：WIFI信息设定成功后，手机与智能家电连接同一WIFI，等待智能家电联网。</string>
+
+    <string name="refresh_phonewifilist_button">刷新手机WIFI列表</string>
+    <string name="refresh_phone_wifilist_button">刷新手机当前连接WIFI列表</string>
+    <string name="fetch_aplist_button">让智能设备报告它附近有哪些WIFI</string>
+    <string name="title_config_list">为智能设备选择一个WIFI</string>
+
+    <string name="makeddevice2net_smartlink_button">配置入网[SmartLink]</string>
+    <string name="makeddevice2net_softap_button">配置入网[SoftAP]</string>
+
+    <string name="tip_mode_smartlink">SmartLink配置</string>
+    <string name="tip_wifi_name">无线网络名称：</string>
+    <string name="tip_wifi_pass">请输入密码：</string>
+    <string name="device2net_button">点击配置入网</string>
+
+    <string name="tip_wifioff">请确认设备WiFi是否打开</string>
+
+    <string name="title_configing">正在配置</string>
+    <string name="tip_configing">正在配置设备入网，请稍后....</string>
+    <string name="code_config_ok_device">成功入网的设备：</string>
+    <string name="code_config_failture">配置失败:</string>
+    <string name="code_check_wifiname">请填写无线SSID名称！</string>
+
+    <string name="tip_input_wifi_pass">输入无线密码</string>
+    <string name="tip_scan_wifi_nearby_smartdevice">智能设备正在扫描自己附近的WIFI</string>
+    <string name="tip_phone_wifi_current">手机当前连接：</string>
+    <string name="tip_input_wifi_sucess">智能设备连WIFI信息设定好了, 请将手机连接到 </string>
+    <string name="tip_input_wifi_failed">智能设备WIFI上网信息设定失败, 请再次尝试</string>
+    <string name="tip_need_to_scanwifi_again">智能设备扫描附近的WIFI失败了, 点击按钮再来一次!</string>
+    <string name="tip_softap_check_needhotspot">手机需要连接U+智能设备WIFI热点，才能执行执行配置入网！</string>
+    <string name="tip_softap_check_wifioff">手机WIFI没有打开或不可用！</string>
+
+    <string name="tip_noti_u_smartdevice_appear">发现附近有U+智能设备等待配置入网</string>
+    <string name="tip_click_2_smartlink">点击进行配置入网</string>
+    <string name="tip_smartdevice_noti_appear"> 出现了!</string>
+
+    <string name="title_udevkitboard_properties">属性状态</string>
+    <string name="title_udevkitboard_control">发送指令</string>
+    <string name="tip_udevkitboard_on">开机状态</string>
+    <string name="tip_udevkitboard_temp">传感器温度</string>
+
+    <string name="title_udevkitboard_panel">U+开发板</string>
+    <string name="title_elecheater_panel">电热水器</string>
+
+    <string name="title_elecheater_properties">属性状态:</string>
+    <string name="title_elecheater_control">发送指令</string>
+    <string name="tip_elecheater_on">开机状态</string>
+    <string name="tip_elecheater_temp">设定温度</string>
+    <string name="label_elecheater_appointment">约定时间</string>
+    <string name="title_elecheater_alarm">报警和提示</string>
+    <string name="lable_elecheater_alarm">报警</string>
+
+    <string name="tip_u_group">Ver：2016.3.4\nU+开发者群：</string>
+    <string name="about">About</string>
+    <string name="title_login">登录</string>
+    <string name="title_logout">注销</string>
+    <string name="code_tip_account_has_logined"> 已登录</string>
+
+    <string name="tip_login_ok">U+云账号已登录</string>
+    <string name="tip_logout_ok">U+云账号已退出</string>
+
+    <string name="title_input_accout_name">U+云账号</string>
+    <string name="title_input_accout_password">密码</string>
+
+    <string name="tip_webquest_error">U+云请求失败!</string>
+    <string name="tip_http_error">与U+云交互时发生网络错误</string>
+
+    <string name="tip_app_need_permission">“通过网络或者卫星对您的手机定位”，App使用该权限帮助您扫描未入网的智能设备，点击去授权跳转App设置界面，为App授权</string>
+    <string name="go_2_permission_button">去授权</string>
+    <string name="refuse_app_request">不授权</string>
+    <string name="tip_app_permission_grant_failed">App没有获得权限，定位功能授权后将可以发现未入网的智能设备！</string>
+
+    <!-- uAccount -->
+    <string name="title_account_username_textview">用户名：</string>
+    <string name="title_account_password_textview">密码：</string>
+    <string name="title_account_login_textview">登录</string>
+    <string name="title_account_findpassword_textview">找回密码</string>
+    <string name="title_account_register_textview">注册</string>
+
+    <string name="title_userbaseinfo_userid">用户Id：</string>
+    <string name="title_userbaseinfo_phoneno">手机号码：</string>
+    <string name="title_userbaseinfo_email">电子邮件：</string>
+
+    <string name="title_emailaccount_bindphone">点击绑定手机号</string>
+    <string name="title_account_resetpassword_button">密码重置</string>
+    <string name="title_account_logout">注销</string>
+    <string name="title_emailaccount_exec_bindphoneno">绑定手机号</string>
+
+    <string name="title_account_registerandlogin">完成注册并登录</string>
+    <string name="title_account_smsactivecode">短信激活码</string>
+    <string name="title_account_quest_smsactivecode">申请短信激活码</string>
+
+    <string name="title_account_main_entry">账号中心</string>
+    <string name="title_account_main_center">账号信息</string>
+    <string name="title_account_main_register">账号注册</string>
+    <string name="title_account_main_bindphone">绑定手机号</string>
+    <string name="title_fill_new_nickname">填写新的智能设备名称</string>
+
+    <string name="title_list_user_info">基本信息</string>
+    <string name="title_list_device_binded">已绑定设备列表</string>
+
+    <string name="tip_getbindinfokey_error">获得绑定信息key错误</string>
+</resources>

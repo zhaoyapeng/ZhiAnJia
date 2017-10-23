@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_option"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    tools:context="com.zhianjia.m.zhianjia.UI.Option.OptionActivity">
+
+    <com.zhianjia.m.zhianjia.UI.widget.NavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_below="@+id/navigationBar">
+
+        <ImageView
+            android:id="@+id/mainLogo"
+            android:layout_width="82dp"
+            android:layout_height="103dp"
+            android:src="@drawable/setting_logo"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainLogo"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/settingVersionColor"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@id/rl_icon"
+        android:layout_marginLeft="29dp">
+
+        <ImageView
+            android:id="@+id/profile_imageview"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/profile_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_toRightOf="@id/profile_imageview"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:text="个人资料"
+            android:textColor="@color/userProfileTitleColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/profile_textview"
+            android:layout_toLeftOf="@+id/iv_profile_arrow"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/userProfileSubTitleColor"
+            android:textSize="14sp" />
+        
+        <ImageView
+            android:id="@+id/iv_profile_arrow"
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:background="@null"
+            android:src="@drawable/arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividerLineColor"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/modify_pwd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@id/profile_layout"
+        android:layout_marginLeft="29dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/modify_pwd_imageview"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/changepwd_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_toRightOf="@id/modify_pwd_imageview"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:text="修改密码"
+            android:textColor="@color/userProfileTitleColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/modify_pwd_textview"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/userProfileSubTitleColor"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividerLineColor"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/check_upgrade_layout"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@id/modify_pwd_layout"
+        android:layout_marginLeft="29dp">
+
+        <ImageView
+            android:id="@+id/check_upgrade_imageview"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/checkupgrade_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_toRightOf="@id/check_upgrade_imageview"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:text="检查更新"
+            android:textColor="@color/userProfileTitleColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/check_upgrade_textview"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/userProfileSubTitleColor"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividerLineColor"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/about_layout"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@id/check_upgrade_layout"
+        android:layout_marginLeft="29dp">
+
+        <ImageView
+            android:id="@+id/about_imageview"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/about_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_toRightOf="@id/about_imageview"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:text="关于我们"
+            android:textColor="@color/userProfileTitleColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/about_textview"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/userProfileSubTitleColor"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividerLineColor"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logout_layout"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@id/about_layout"
+        android:layout_marginLeft="29dp">
+
+        <ImageView
+            android:id="@+id/logout_imageview"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/logout_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_toRightOf="@id/logout_imageview"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:text="退出登录"
+            android:textColor="@color/userProfileTitleColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/logout_textview"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/userProfileSubTitleColor"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividerLineColor"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+    <com.zhianjia.m.zhianjia.UI.widget.ToolBarSpaceView
+        android:id="@+id/bottomSpaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:id="@+id/aboutTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomSpaceView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="版权所有©️2017 大自然家居（中国）有限公司 保留所有权利"
+        android:textColor="@color/loginTitleLightColor"
+        android:textSize="10sp" />
+
+</RelativeLayout>

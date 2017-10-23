@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/mrj/zhaoyp/ZhiAnJia/app/libs/httpclient-4.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="733db77aa8d9b2d68015189df76ab06304406e50">
+        <dex dex="/Users/mrj/zhaoyp/ZhiAnJia/app/build/intermediates/pre-dexed/release/httpclient-4.5.2_d5edcb1dead647977babdb4ef7166c8e4fcc36dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mrj/zhaoyp/ZhiAnJia/app/libs/android-async-http-1.4.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881">
+        <dex dex="/Users/mrj/zhaoyp/ZhiAnJia/app/build/intermediates/pre-dexed/release/android-async-http-1.4.5_6967719d3f6377eef6766303627593dfab1e8b52.jar" />
+    </item>
+
+</items>

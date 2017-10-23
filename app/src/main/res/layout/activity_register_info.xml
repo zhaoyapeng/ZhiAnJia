@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    tools:context="com.zhianjia.m.zhianjia.UI.Login.RegisterInfoActivity">
+
+
+    <com.zhianjia.m.zhianjia.UI.widget.NavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/keyboard_space_view"
+        android:layout_below="@id/change_user_info_avatar_layout"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp">
+
+        <LinearLayout
+            android:id="@+id/username_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textColor="@color/changeDetailTitleColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/input_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/transparent"
+                android:hint="请输入姓名"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/changeDetailChangeableColor"
+                android:textColorHint="@color/registerDisableColor"
+                android:textSize="12sp"
+                tools:text="" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dividerLineColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textColor="@color/changeDetailTitleColor"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/mobile_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="13141415531"
+                    android:textColor="@color/changeDetailTitleColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/mobile_state_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="已验证"
+                    android:textColor="@color/registerDisableColor"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/dividerLineColor" />
+
+
+            <TextView
+                android:id="@+id/change_pass_title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="密码"
+                android:textColor="@color/changeDetailTitleColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/input_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/transparent"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/registerChangeableColor"
+                android:textColorHint="@color/registerDisableColor"
+                android:textSize="12sp"
+                tools:text="" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/dividerLineColor" />
+
+            <TextView
+                android:id="@+id/rechange_pass_title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="确认密码"
+                android:textColor="@color/changeDetailTitleColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/reinput_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/transparent"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/registerChangeableColor"
+                android:textColorHint="@color/registerDisableColor"
+                android:textSize="12sp"
+                tools:text="" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dividerLineColor" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/commit_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/button_normal_bg"
+            android:text="保存"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <com.zhianjia.m.zhianjia.UI.widget.KeyboardSpaceView
+        android:id="@+id/keyboard_space_view"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true" />
+
+    <RelativeLayout
+        android:id="@+id/change_user_info_avatar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/navigationBar">
+
+        <RelativeLayout
+            android:visibility="invisible"
+            android:id="@+id/avatar_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <com.zhianjia.m.zhianjia.UI.widget.RoundImageView
+                android:id="@+id/avatar_image_view"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <ImageView
+                android:id="@+id/edit_avatar_image_view"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_alignBottom="@+id/avatar_image_view"
+                android:layout_alignRight="@+id/avatar_image_view"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/edit_avatar_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

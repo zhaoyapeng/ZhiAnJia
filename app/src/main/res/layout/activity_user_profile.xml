@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    tools:context="com.zhianjia.m.zhianjia.UI.Option.UserProfile">
+
+    <com.zhianjia.m.zhianjia.UI.widget.NavigationBar
+    android:id="@+id/navigationBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@id/navigationBar"
+        android:layout_marginLeft="29dp">
+
+        <ImageView
+            android:id="@+id/name_imageview"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/name_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+        
+        <TextView
+            android:layout_toRightOf="@id/name_imageview"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:text="名称"
+            android:textColor="@color/userProfileTitleColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/name_textview"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/userProfileSubTitleColor"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividerLineColor"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/city_layout"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@id/name_layout"
+        android:layout_marginLeft="29dp">
+
+        <ImageView
+            android:id="@+id/city_imageview"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/city_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_toRightOf="@id/city_imageview"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:text="城市"
+            android:textColor="@color/userProfileTitleColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/city_textview"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/userProfileSubTitleColor"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividerLineColor"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@id/city_layout"
+        android:layout_marginLeft="29dp">
+
+        <ImageView
+            android:id="@+id/address_imageview"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/address_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_toRightOf="@id/address_imageview"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:text="地址"
+            android:textColor="@color/userProfileTitleColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/address_textview"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/userProfileSubTitleColor"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividerLineColor"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_layout"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@id/address_layout"
+        android:layout_marginLeft="29dp">
+
+        <ImageView
+            android:id="@+id/area_imageview"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/area_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_toRightOf="@id/area_imageview"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:text="面积"
+            android:textColor="@color/userProfileTitleColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/area_textview"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/userProfileSubTitleColor"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividerLineColor"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/button_normal_bg"
+        android:text="退 出"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

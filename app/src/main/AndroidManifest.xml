@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhianjia.m.zhianjia">
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    //networking api使用权限
+    <uses-permission android:name="android.permission.INTERNET" />
+    //允许应用程序使用摄像头
+    <uses-permission android:name="android.permission.CAMERA" />
+    //允许应用程序读取sd卡
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    //允许应用程序写入sd卡
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    //允许应用程序访问网络状态
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    //摄像头
+    <uses-feature android:name="android.hardware.camera" />
+    //摄像头功能
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+
+    <application
+        android:name=".ZhiAnJiaApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".UI.Device.DeviceDetailActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.DeviceDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Login.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.LoginActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Login.RegisterMobileActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.RegisterMobileActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Login.RegisterInfoActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.RegisterInfoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Login.FindPasswordActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.FindPasswordActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Option.UserProfile"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.UserProfile" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Device.DeviceHistoryActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.DeviceHistoryActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Device.DeviceListActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.DeviceListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Device.Add.WifiDetectActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.WifiDetectActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Device.DeviceRenameActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.DeviceRenameActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Device.Add.ConnectingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.ConnectingActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Option.OptionActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.OptionActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Option.AboutActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.AboutActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Option.ModifyPasswordActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.ModifyPasswordActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Device.Add.WifiUploadActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.WifiUploadActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Device.DeviceAddActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.DeviceAddActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Device.WifiListActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zhianjia.m.zhianjia.WifiListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".haier.activity.PermissionTipActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 修改用户昵称 -->
+        <activity
+            android:name=".UI.User.ModifyUserInfoActivity"
+            android:screenOrientation="portrait" />
+
+
+        <meta-data
+            android:name="APP_ID"
+            android:value="MB-ZAJ-0000" />
+        <meta-data
+            android:name="APP_KEY"
+            android:value="2ca745967cfcae8a43a71c4a2aef0936" />
+
+        <meta-data
+            android:name="SECRET_KEY"
+            android:value="10D0B8284F2CBE11E3B4C983EAC26906" />
+    </application>
+
+</manifest>

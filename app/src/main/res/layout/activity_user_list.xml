@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhianjia.m.zhianjia.UI.main.UserListActivity">
+
+    <com.zhianjia.m.zhianjia.UI.widget.NavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/navigationBar"
+        android:background="@color/userSearchBackgroundColor"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_background" />
+
+        <EditText
+            android:id="@+id/searchInputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/transparent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textColor="@color/userSearchInputColor"
+            android:textColorHint="@color/userSearchHintColor"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/searchHintLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/hintIcon"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/search_button" />
+
+            <TextView
+                android:id="@+id/hintText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/hintIcon"
+                android:text="请输入人名或拼音"
+                android:textColor="@color/userSearchHintColor"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.zhianjia.m.zhianjia.UI.main.ApplyListLayout
+        android:id="@+id/apply_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchBar" />
+
+    <com.zhianjia.m.zhianjia.UI.widget.swipemenulistview.SwipeMenuListView
+        android:id="@+id/mainList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/apply_list_layout"
+        android:background="@color/userListViewColor"
+        android:divider="@color/transparent"
+        android:footerDividersEnabled="true" />
+
+</RelativeLayout>

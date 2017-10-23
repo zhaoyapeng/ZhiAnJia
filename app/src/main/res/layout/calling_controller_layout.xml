@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/left_touch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp">
+
+        <ImageView
+            android:id="@+id/leftImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/calling_camera"
+            android:transformPivotX="35dp"
+            android:transformPivotY="35dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mid_touch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/centerImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/calling_hang_up"
+            android:transformPivotX="35dp"
+            android:transformPivotY="35dp" />
+
+        <ImageView
+            android:id="@+id/centerFadeImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:src="@drawable/calling_answer"
+            android:transformPivotX="35dp"
+            android:transformPivotY="35dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_touch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp">
+
+        <ImageView
+            android:id="@+id/rightImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/calling_voice"
+            android:transformPivotX="35dp"
+            android:transformPivotY="35dp" />
+    </RelativeLayout>
+</LinearLayout>

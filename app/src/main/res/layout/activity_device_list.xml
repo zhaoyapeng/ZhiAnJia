@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_device_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhianjia.m.zhianjia.UI.Device.DeviceListActivity">
+
+    <!-- B: 导航栏 -->
+    <com.zhianjia.m.zhianjia.UI.widget.TitleBarSpaceView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button_normal_bg" />
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/home_navigation_bar"-->
+    <!--android:layout_below="@+id/titleBar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="@color/button_normal_bg">-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/home_nav_left"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentLeft="true">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/home_nav_left_button"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:text="设置"-->
+    <!--android:textColor="@color/home_panel_bg"-->
+    <!--android:textSize="15sp"-->
+    <!--android:background="@null"-->
+    <!--android:layout_alignParentLeft="true" />-->
+
+    <!--</RelativeLayout>-->
+    <!---->
+    <!---->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/home_nav_right"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentRight="true">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/home_nav_right_button"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:text="添加设备"-->
+    <!--android:textColor="@color/home_panel_bg"-->
+    <!--android:textSize="15sp"-->
+    <!--android:background="@null"-->
+    <!--android:layout_alignParentRight="true" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+
+    <com.zhianjia.m.zhianjia.UI.widget.NavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/titleBar" />
+
+    <!-- E: 导航栏 -->
+
+    <ListView
+        android:id="@+id/lv_devicelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/navigationBar" />
+
+
+</RelativeLayout>

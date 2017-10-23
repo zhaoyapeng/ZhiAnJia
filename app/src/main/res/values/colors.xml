@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+
+    <color name="gray_bg">#ffffff</color>
+
+    <color name="home_panel_bg">#fffffefe</color>
+    <color name="home_button_select">#ff17b5bc</color>
+    <color name="home_button_unselect">#ff9fa0a0</color>
+
+    <color name="button_text">#ffe2eee0</color>
+    <color name="button_normal_bg">#ff42ac32</color>
+
+    <color name="login_text">#ffb0c6ae</color>
+    <color name="login_sub_text">#ffb7d1b6</color>
+
+    <color name="dividerLineColor">#ffe4e4e5</color>
+    <color name="registerTitleColor">#ff9d9d9f</color>
+    <color name="registerSendSMSColor">#ffa8a8aa</color>
+    <color name="registerDisableColor">#ffa8a8aa</color>
+
+    <color name="userProfileTitleColor">#ff1d1d26</color>
+    <color name="userProfileSubTitleColor">#ff9fa0a0</color>
+
+
+    <color name="default_overlay_color">#AAFFFFFF</color>
+
+    <color name="colorPrimary">#ffff8218</color>
+    <color name="colorPrimaryDark">#ffff8218</color>
+    <color name="colorAccent">#ffff8218</color>
+
+    <color name="messageColor">#ffff9218</color>
+
+    <color name="loginTitleColor">#ffa8a8aa</color>
+    <color name="loginTitleLightColor">#ffc9c9c9</color>
+    <color name="loginListViewColor">#ffffffff</color>
+    <color name="loginListItemColor">#ff1d1b26</color>
+
+
+    <color name="transparent">#00000000</color>
+
+    <color name="progressAnimationLight">#7fffffff</color>
+
+    <color name="callingTextColor">#ff9fa0a0</color>
+
+    <color name="userItemSelectionColor">#fffea65c</color>
+    <color name="userItemSelectedColor">#fff8f8f8</color>
+    <color name="userItemTextColor">#ff757575</color>
+    <color name="userItemStateAnsweredColor">#ffa8a8a8</color>
+    <color name="userItemStateMissedColor">#ffff4d4d</color>
+
+    <color name="userPageBackgroundColor">#ffffffff</color>
+    <color name="userListViewColor">#ffffffff</color>
+
+    <color name="userSearchBackgroundColor">#fff3f3f5</color>
+    <color name="userSearchInputBackgroundColor">#ffffffff</color>
+    <color name="userSearchInputBorderColor">#ffe6e6e6</color>
+    <color name="userSearchHintColor">#ffafafb1</color>
+    <color name="userSearchInputColor">#ff1d1d26</color>
+
+
+    <color name="settingVersionColor">#ff949595</color>
+    <color name="settingItemTextColor">#ff757575</color>
+    <color name="settingPageBackgroundColor">#ffffffff</color>
+
+    <color name="addUserTitleColor">#ffa8a8aa</color>
+    <color name="addUserInputColor">#ff1d1d26</color>
+    <color name="addUserBackground">#ffffffff</color>
+    <color name="addUserButtonTextColor">#ffffffff</color>
+
+    <color name="changeDetailTitleColor">#ffa8a8aa</color>
+    <color name="changeDetailChangeableColor">#ff1d1d26</color>
+    <color name="changeDetailAvatarBorderColor">#ffe6e6e6</color>
+
+
+
+    <color name="registerAvatarBorderColor">#ffe6e6e6</color>
+    <color name="registerChangeableColor">#ff1d1d26</color>
+
+    <color name="userDetailTimeColor">#ff1d1d26</color>
+    <color name="userDetailNoneRecordColor">#ffafafb1</color>
+
+    <color name="applyMessageAgreeColor">#ffff8218</color>
+    <color name="applyMessageDisagreeColor">#ffdcdddd</color>
+    <color name="applyMessageTextColor">#ff595757</color>
+    <color name="applyMessageButtonTextColor">#ffffffff</color>
+    <color name="applyMessageBackground">#ffffffff</color>
+
+    <color name="black_overlay">#4d000000</color>
+</resources>

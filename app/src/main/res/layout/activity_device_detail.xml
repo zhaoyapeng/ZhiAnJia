@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhianjia.m.zhianjia.UI.Device.DeviceDetailActivity"
+    android:background="@drawable/home_bg_green">
+
+    <RelativeLayout
+        android:id="@+id/home_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/home_nav_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <Button
+                android:id="@+id/home_nav_left_button"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@null"
+                android:text="设置"
+                android:textColor="@color/home_panel_bg"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+        <!--android:background="@drawable/home_device_name_border"-->
+
+        <TextView
+            android:id="@+id/devicename_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:textColor="#fffffefe"
+            android:visibility="gone"
+            android:textSize="12dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/home_nav_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <Button
+                android:id="@+id/home_nav_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:text="添加设备"
+                android:textColor="@color/home_panel_bg"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:layout_below="@+id/home_navigation_bar"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_hasdevice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomSpaceView"
+        android:layout_below="@+id/line"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/rl_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:paddingBottom="10dp">
+                    <TextView
+                        android:id="@+id/value_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="60dp" />
+
+                    <TextView
+                        android:id="@+id/desc_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/value_textview"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textColor="#fffffefe"
+                        android:textSize="20dp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/unit_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:textColor="#fffffefe"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/time_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:textColor="#fffffefe"
+                            android:textSize="13dp" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#33ffffff"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/home_panel_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/home_panel_bg">
+
+                <com.zhianjia.m.zhianjia.UI.widget.NatureHomeButton
+                    android:id="@+id/home_pm_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#eeeeee" />
+
+                <com.zhianjia.m.zhianjia.UI.widget.NatureHomeButton
+                    android:id="@+id/home_jiaquan_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#eeeeee" />
+
+                <com.zhianjia.m.zhianjia.UI.widget.NatureHomeButton
+                    android:id="@+id/home_wendu_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.zhianjia.m.zhianjia.UI.widget.NatureHomeButton
+                    android:id="@+id/home_shidu_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#eeeeee" />
+
+                <com.zhianjia.m.zhianjia.UI.widget.NatureHomeButton
+                    android:id="@+id/home_wuyan_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#eeeeee" />
+
+                <com.zhianjia.m.zhianjia.UI.widget.NatureHomeButton
+                    android:id="@+id/home_tov_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_noview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomSpaceView"
+        android:layout_below="@+id/line"
+        >
+        <!-- E: 导航栏 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_bg"
+            >
+
+            <ImageButton
+                android:id="@+id/img_prompt"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:layout_above="@+id/tv_noviewtip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/no_device" />
+
+            <TextView
+                android:id="@+id/tv_noviewtip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/button_normal_bg"
+                android:textSize="14dp" />
+            <!--android:text="目前没有设备\n点击右上添加"-->
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.zhianjia.m.zhianjia.UI.widget.ToolBarSpaceView
+        android:id="@+id/bottomSpaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

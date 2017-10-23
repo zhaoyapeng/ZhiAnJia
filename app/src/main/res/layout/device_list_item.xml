@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingLeft="10dp">
+
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:focusable="false">
+        <!-- Bottom IPersonView Start-->
+        <LinearLayout
+            android:id="@+id/bottom_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <!--What you want to show-->
+            <TextView
+                android:id="@+id/btn_set_net"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="#41ac31"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="配置入网"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/btn_unbind"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="#fe4e28"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="解绑"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+        <!-- Bottom IPersonView End-->
+
+        <!-- Surface IPersonView Start -->
+        <LinearLayout
+            android:id="@+id/layout_outer_layer"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/white"
+            android:paddingLeft="10dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                   >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/userProfileSubTitleColor"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/text_statue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:gravity="center_vertical"
+                            android:text="(离线)"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="14dp" />
+
+                        <ImageView
+                            android:id="@+id/img_icon_haier"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/haier_logo"
+                            android:layout_marginLeft="6dp"
+                            android:layout_gravity="center_vertical"
+                            />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:textColor="@color/userProfileTitleColor"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_rename"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:layout_width="9.3dp"
+                    android:layout_height="9.3dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/rename_icon" />
+
+                <TextView
+                    android:id="@+id/btn_rename"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="改名"
+                    android:textColor="@color/userProfileSubTitleColor"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.daimajia.swipe.SwipeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#d4d4d4" />
+
+</LinearLayout>

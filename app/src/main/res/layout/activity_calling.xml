@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.zhianjia.m.zhianjia.UI.call.FaceTimeLayout
+        android:id="@+id/faceTimeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent">
+
+
+    </com.zhianjia.m.zhianjia.UI.call.FaceTimeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/maskLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <view
+                android:id="@+id/avatarIcon"
+                class="com.zhianjia.m.zhianjia.UI.widget.RoundImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="130dp" />
+
+            <TextView
+                android:id="@+id/targetNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/avatarIcon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/callingTextColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/callingStateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/targetNameTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/callingTextColor"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <com.zhianjia.m.zhianjia.UI.call.CallingControllerView
+            android:id="@+id/controller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp" />
+    </RelativeLayout>
+</RelativeLayout>

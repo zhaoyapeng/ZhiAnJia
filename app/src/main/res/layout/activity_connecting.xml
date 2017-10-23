@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_connecting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    tools:context="com.zhianjia.m.zhianjia.UI.Device.Add.ConnectingActivity">
+
+    <com.zhianjia.m.zhianjia.UI.widget.NavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ImageButton
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_above="@+id/tv_wifi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/link_icon"
+        android:background="@null"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/tv_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="连接中"
+        android:textColor="@color/button_normal_bg"
+        android:textSize="14dp"/>
+
+</RelativeLayout>

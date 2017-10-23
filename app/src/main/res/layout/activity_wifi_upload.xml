@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wifi_upload"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    tools:context="com.zhianjia.m.zhianjia.UI.Device.Add.WifiUploadActivity">
+
+    <com.zhianjia.m.zhianjia.UI.widget.NavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomSpaceView"
+        android:layout_below="@id/navigationBar"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp">
+
+        <LinearLayout
+            android:id="@+id/wifi_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_ssid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="网络名称"
+                android:textColor="@color/changeDetailTitleColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_ssid"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/transparent"
+                android:hint="请输入网络名称"
+                android:singleLine="true"
+                android:textColor="@color/registerChangeableColor"
+                android:textColorHint="@color/registerDisableColor"
+                android:textSize="12sp"
+                tools:text="" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/dividerLineColor" />
+
+
+            <TextView
+                android:id="@+id/tv_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="密码"
+                android:textColor="@color/changeDetailTitleColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/transparent"
+                android:hint="请输入密码"
+                android:singleLine="true"
+                android:textColor="@color/registerChangeableColor"
+                android:textColorHint="@color/registerDisableColor"
+                android:textSize="12sp"
+                tools:text="" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/dividerLineColor" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/commit_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/button_normal_bg"
+            android:text="保 存"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+
+    <com.zhianjia.m.zhianjia.UI.widget.ToolBarSpaceView
+        android:id="@+id/bottomSpaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/keyboard_space_view" />
+
+    <com.zhianjia.m.zhianjia.UI.widget.KeyboardSpaceView
+        android:id="@+id/keyboard_space_view"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

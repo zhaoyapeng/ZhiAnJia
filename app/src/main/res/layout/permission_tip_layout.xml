@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tip_app_need_permission"
+        android:textSize="28sp"
+        android:id="@+id/permission_tip_textview"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_below="@id/permission_tip_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refuse_app_request"
+            android:id="@+id/permission_request_refuse_button"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_2_permission_button"
+            android:id="@+id/permission_request_go_button"/>
+    </LinearLayout>
+
+</RelativeLayout>
